@@ -6,7 +6,7 @@ font-style: oblique;
 display: center;
 text-align: center;
 }
-body {
+.container {
 background: #000000;
 flex: 1;
 }
@@ -21,4 +21,8 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 }
 stonecold {
 float: right;
+}
+p {
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: white;
 }

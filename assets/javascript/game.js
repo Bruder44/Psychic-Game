@@ -15,19 +15,23 @@ document.onkeyup = function(event) {
       guessesLeft = 9;
       compChoice = letters[Math.floor(Math.random() * letters.length)];
       document.getElementById("wins").innerText = wins;
-      document.getElementById("guesses").innerText = guessesLeft;
+      document.getElementById("guesses").appendChild = guessesLeft;
     } else {
       if (guessesLeft > 0) {
         guessesLeft--;
+        var choice = document.createElement("span");
+        choice.innerHTML = playerChoice; 
         document.getElementById("guesses").innerText = guessesLeft;
-        document.getElementById("guessesmade").innerText = playerChoice;
+        document.getElementById("guessesmade").appendChild(choice);
+        
       }
       if (guessesLeft === 0) {
         losses++;
         guessesLeft = 9;
+        var choice = document.createElement("span");
+        choice.innerHTML = playerChoice; 
         document.getElementById("losses").innerText = losses;
         document.getElementById("guesses").innerText = guessesLeft;
-        document.getElementById("guessesmade").innerText = playerChoice;
         compChoice = letters[Math.floor(Math.random() * letters.length)];
       }
     }
