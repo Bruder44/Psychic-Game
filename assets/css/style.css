@@ -4,7 +4,21 @@ background: grey;
 font-family: Georgia, 'Times New Roman', Times, serif;
 font-style: oblique;
 display: center;
+text-align: center;
 }
 body {
 background: #000000;
+flex: 1;
+}
+h2 {
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-style: italic;
+color: white;
+}
+div {
+color: white;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+stonecold {
+float: right;
 }
